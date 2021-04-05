@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
+}
+.form-group{
+    background-color: white;
+    display: flex;
+    width: 800px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px rgba(12, 18, 0, 4);
+}
+.dropdown{
+    position: relative;
+    width: 150px;
+    padding-left: 5px;
+    color: rgb(24, 85, 9);
+    border-right: 2px solid rgb(109, 20, 20);
+    cursor: pointer;
+}
+.default-option{
+    padding: 8px 30px;
+}
+
+.dropdown-list ul{
+    list-style: none;
+    background-color: white;
+    color: green;
+    position:absolute;
+    top: 50px;
+    left: 0px;
+    width: 150px;
+    border-radius: 5px;
+    display: none;
+}
+.dropdown-list ul li{
+    padding: 10px 10px 10px 20px;
+}
+
+.dropdown-list ul li i{
+    margin-right: 5px;
+}
+
+.dropdown::before{
+    content: "";
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #1d1d1d transparent;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.dropdown-list ul li::before{
+    content: "";
+    border-width: 0px 8px 8px 8px;
+    border-style: solid;
+    border-color: #fff transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 24px;
+
+}
+.dropdown-list ul li:hover{
+    background-color: #fff;
+    color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dropdown-list ul.active{
+    display: block;
+}
+.search{
+ width: 600px;
+ height: 100%;
+}
+.search-input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0 10px;
+    color: #3a3a3a;
+    /* outline: none; */
+}
+.btn{
+    background-color: #fff;
+    width: 50px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    /* outline: none; */
+}
+
+.btn .fa-search{
+    font-size: 20px;
+    color: green;
+}
+
+.btn .fa-search:hover{
+    font-size: 24px;
+    transition: .2s;
+}
+
+input, button:focus{
+    outline: none;
+}
+
+

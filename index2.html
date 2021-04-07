@@ -7,25 +7,68 @@
     <title>Search
 
     </title>
+    
     <script src="https://kit.fontawesome.com/78ceb0f66b.js" crossorigin="anonymous"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+  
+
+    
     <link rel="stylesheet" href="st.css">
     <script src="a.js"></script>
 </head>
 <body>
+
     <div class="container">
-        <h1 class="title">What are you seraching for?</h1>
-        <div class="form-group">
-            <div class="dropdown">
-                <div class="default-option">Location</div>
-                <div class="dropdown-list">
-                    <ul>
-                        <li><i class="fas fa-image"></i>image</li>
-                        <li><i class="fas fa-image"></i> vector</li>
-                        <li><i class="fas fa-music"></i> music</li>
-                        <li><i class="fas fa-video"></i> sound</li>
+        <h1 class="searchtitle">What are you searching for?</h1>
+        <div class="searchform-group">
+            <div class="searchdropdown">
+                <div class="searchdefault-option">Location</div>
+                <div class="searchdropdown-list">
+                    <ul class="searchul">
+                        <li class="searchli searchli1">
+                          <a href="">Image</a>
+
+                            <div class="sidedropdown">
+                                <ul class="sideul">
+                                    <li class="sideli">
+                                      <a href="">Image1</a>
+                                      <div class="sidedropdown1">
+                                          <ul class="sideul1">
+                                              <li>image10</li>
+                                              <li>image12</li>
+                                              <li>image13</li>
+                                          </ul>
+                                      </div></li> 
+                                    <li>image2</li>
+                                    <li>image3</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="searchli"> 
+                          <a href="">vector</a>
+
+                          <div class="sidedropdown">
+                              <ul class="sideul">
+                                  <li>vector10</li>
+                                  <li>vector12</li>
+                                  <li>vector13</li>
+                              </ul>
+                          </div></li>
+                        <li class="searchli">
+                          <a href="">music</a>
+
+                          <div class="sidedropdown">
+                              <ul class="sideul">
+                                  <li>music1</li>
+                                  <li>music2</li>
+                                  <li>music3</li>
+                                  <li>music4</li>
+                                  <li>music5</li>
+                                  <li>music6</li>
+                              </ul>
+                          </div></li>
+                        <li class="searchli">sound</li>
                     </ul>
                 </div>
             </div>
@@ -34,9 +77,10 @@
                 <input class="search-input" type="text" placeholder="Search for anything..">
 
             </div>
-            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <button class="searchbtn" type="submit"><i class="fas fa-search"></i></button>
         </div>
-    </div>
 
-</body>
+
+       
+    </div>
 </html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    /* background-color: aquamarine; */
+}
+/* ###############utility classes #################### */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight:700;
+}
+.btn-primary{
+    color: #fff;
+    background-color: rgb(8, 139, 58);
+}
+
+/* ############ navbar styling ################# */
+/* for desktop */
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style: none;
+    display: flex;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+.logo{
+    order: 1;
+    font-size: 3rem;
+}
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 700px;
+    transition: color .3s ease-in-out;
+}
+.navbar a:hover{
+    color: #117964;
+    text-decoration: none;
+    font-weight: 700px;
+}
+/* ############## showcase area #################### */
+.showcase-area{
+    height: 50vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)),url(images/Search_131.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+.main-title{
+    text-transform: uppercase;
+}
+
+
+/* ########################category################ */
+
+.category-container{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* height: 100%; */
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+.category-list{
+    position: relative;
+    height: 200px;
+    width: 180px;
+    padding: 1px;
+    background-color: rgb(187, 187, 187);
+}
+
+.category-list1{
+    position: absolute;
+    height: 200px;
+    width: 180px;
+    padding: 10px;
+    background-color: rgb(66, 65, 65);
+    top: 0%;
+    left: 100%;
+   
+}
+.category-list1{
+    display: none;
+
+}
+.category-list ul li:hover .category-list1{
+    display: block;
+
+}
+
+.category1 .hover a:hover .category-list1 .category1{
+    display: block;
+}
+.category-list ul{
+    list-style: none;
+}
+.category-list ul li{
+    padding: 8px 18px;
+    list-style: none;
+    background-color: #117964;
+    margin-bottom: 5px;
+}
+.category-list ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

@@ -108,6 +108,78 @@ body{
 }
 
 
+/* ########################about us################ */
+#about{
+    padding: 50px 0px;
+    background: #f5f5f5 ;
+
+}
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#about h2{
+    font-size: 3.2rem;
+}
+
+#about p{
+    font-size: 1.6rem;
+    color: #555;
+}
+#about small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 700;
+}
+.about-img{ 
+    flex: 1 1 400px;
+    padding: 30px;
+    /* border: 2px solid black; */
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation {
+    100%{
+        transform: translate(0);
+    }
+    
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    /* border: 2px solid black; */
+    transform: translateX(-150%);
+    animation: about-txt-animation 1s ease-in-out forwards;
+}
+@keyframes about-txt-animation {
+    100%{
+        transform: translate(0);
+    }
+    
+}
+
+
+.about-img img {
+    display: block;
+    height: 400px;
+    margin: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ########################category################ */
 
 .category-container{
@@ -163,3 +235,8 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+
+
+
+

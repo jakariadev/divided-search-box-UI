@@ -196,8 +196,15 @@ body{
     position: relative;
     height: 200px;
     width: 180px;
-    padding: 1px;
+    padding: 5px;
     background-color: rgb(187, 187, 187);
+}
+.category-list ul{
+    height: 180px;
+    width: 180px;
+    /* padding: 1px; */
+    background-color: rgb(146, 47, 47);
+    overflow: auto;
 }
 
 .category-list1{
@@ -205,23 +212,20 @@ body{
     height: 200px;
     width: 180px;
     padding: 10px;
-    background-color: rgb(66, 65, 65);
+    /* background-color: rgb(143, 14, 14); */
     top: 0%;
     left: 100%;
+    visibility: hidden;
+    transition: 0.2s .2s;
+    /* display: none; */
    
 }
-.category-list1{
-    display: none;
-
-}
 .category-list ul li:hover .category-list1{
-    display: block;
-
+    /* display: block; */
+    visibility: visible;
+    transition-delay: 0s;
 }
 
-.category1 .hover a:hover .category-list1 .category1{
-    display: block;
-}
 .category-list ul{
     list-style: none;
 }
@@ -229,7 +233,7 @@ body{
     padding: 8px 18px;
     list-style: none;
     background-color: #117964;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .category-list ul li a{
     text-decoration: none;

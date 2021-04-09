@@ -191,52 +191,99 @@ body{
     /* height: 100%; */
     font-size: 1.6rem;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .category-list{
     position: relative;
-    height: 200px;
-    width: 180px;
-    padding: 1px;
-    background-color: rgb(187, 187, 187);
+    height: 500px;
+    width: 200px;
+    padding: 5px;
+    /* background-color: rgb(187, 187, 187); */
 }
-
-.category-list1{
-    position: absolute;
-    height: 200px;
-    width: 180px;
-    padding: 10px;
-    background-color: rgb(66, 65, 65);
-    top: 0%;
-    left: 100%;
-   
-}
-.category-list1{
-    display: none;
-
-}
-.category-list ul li:hover .category-list1{
-    display: block;
-
-}
-
-.category1 .hover a:hover .category-list1 .category1{
-    display: block;
-}
-.category-list ul{
+.category-list .category-unorderlist{
     list-style: none;
+    height: 100%;
+    width: 100%;
+    /* padding: 1px; */
+    background-color: #05221c;
+    overflow: auto;
 }
-.category-list ul li{
-    padding: 8px 18px;
+.category-list .category-unorderlist .category-listitem{
+    padding: 5px 14px;
     list-style: none;
-    background-color: #117964;
-    margin-bottom: 5px;
+    background-color: #05221c;
+    margin-bottom: 2px;
 }
-.category-list ul li a{
+.category-list .category-unorderlist .category-listitem a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
+.category-list1{
+    position: absolute;
+    height: 500px;
+    width: 960px;
+    padding: 5px 5px;
+    background-color: rgb(143, 14, 14);
+    top: 1%;
+    left: 100%;
+    visibility: hidden;
+    transition: 0.2s .2s;
+    /* display: none; */
+   
+}
+.category-list .category-unorderlist .category-listitem:hover .category-list1{
+    /* display: block; */
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/* .category-list1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(236, 93, 117);
+}
+
+.category-list1 ul li{
+    width: 25%;
+    background-color: #4948b9;
+}
 
 
+.hover ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+
+} */
 
 
+.category-list1-unorderlist{
+    padding: 20px 20px;   
+}
+.category-list1-unorderlist .subcat-heading {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #05221c;
+    font-weight: 700;
+}
+
+.category-list1 .leftcat .hover1{
+    width: 18%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: auto;
+}
+/* .subcat-heading{
+    margin-bottom: 20px;
+} */
+.hover1 .category-list2-unorderlist{
+    padding-left: 5px;
+
+}
+.hover1 .category-list2-unorderlist a:hover{
+    margin-left: 1px;
+    color: greenyellow;
+}
